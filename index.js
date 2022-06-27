@@ -107,9 +107,7 @@ app.get('/update', async (req, res)=>{
   run().catch(console.dir);
 })
 
-app.listen(3000, ()=>{
-    console.log('app listing on port 3000')
-})
+app.listen(process.env.PORT, '0.0.0.0');
 
 
 // Replace the uri string with your MongoDB deployment's connection string.
