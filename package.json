@@ -1,0 +1,23 @@
+{
+  "name": "prevent-project",
+  "version": "1.0.0",
+  "description": "It is a Project which tracks Handling records. ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saiful Islam",
+  "license": "MIT",
+  "dependencies": {
+    "cros": "^1.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.4.0"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ]
+}
