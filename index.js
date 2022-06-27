@@ -5,7 +5,7 @@ const { get } = require('mongoose');
 var ObjectId = require('mongodb').ObjectID;
 
 let app = express();
-const uri =process.env.MONGODB;
+const uri ="mongodb+srv://saiful:saif1994@cluster0.vxj27.mongodb.net/?retryWrites=true&w=majority";
 
 app.get('/', async (req, res)=>{
   const client = new MongoClient(uri);
