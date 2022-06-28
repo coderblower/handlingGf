@@ -58,7 +58,7 @@ app.get('/del', async (req, res)=>{
 })
 
 
-app.listen(3000 || process.env.PORT, process.env.HOST ||'0.0.0.0');
+app.listen( process.env.PORT|| 3000, process.env.HOST ||'0.0.0.0');
 
 
 // Replace the uri string with your MongoDB deployment's connection string.
