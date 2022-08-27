@@ -81,11 +81,12 @@ module.exports = {
                 return `${d} days ${h} Hours ${m} minutes ${s} seconds`
              }
 
-             obj.lastHandling = { time : convertMs(new Date().getTime() -  arr[0].time )}
+             obj.lastHandling = { time : convertMs(new Date().getTime() -  arr[0].time.getTime() )}
+             
              // highest and lowest duration between two date
              let high = 0, low, hightArr, lowArr;
              arr.reduce((acc, val)=>{
-              c = acc.time - val.time;
+              c = acc.time.getTime() - val.time.getTime();
               h = high; l = low;
               high = Math.max(c, high||c);
               low = Math.min(c, low||c);

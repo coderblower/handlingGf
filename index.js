@@ -9,7 +9,7 @@ mongoose.connect(uri);
 
 require('./routes')(app)
 
-app.listen( process.env.PORT,'0.0.0.0', ()=>{
+app.listen( process.env.PORT||3000, process.env.HOST || '0.0.0.0', ()=>{
   console.log(process.env.PORT)
 });
 
