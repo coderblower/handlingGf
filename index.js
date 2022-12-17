@@ -4,7 +4,7 @@ let app = express();
 
 const mongoose = require('mongoose')
 
-const uri ="mongodb+srv://saiful:saif1994@cluster0.vxj27.mongodb.net/App2?retryWrites=true&w=majority";
+const uri ="mongodb+srv://saiful:saif1994@cluster0.vxj27.mongodb.net/App?retryWrites=true&w=majority";
 mongoose.connect(uri);
 
 require('./routes')(app)
