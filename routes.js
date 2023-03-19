@@ -22,8 +22,6 @@ module.exports = (app)=>{
     
     app.get('/camp/del', campCongroller.deleteOne)
     
-    // time difference low to high and  high to low .. using query value 
-
-      
+    // time difference low to high and  high to low .. using query value.
       
 }
